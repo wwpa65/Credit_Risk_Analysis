@@ -17,20 +17,16 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 
 Analysis results using Randon Oversampling, SMOTE Oversampling, Undersampling, SMOTEEN (Combination of Over and Undersampling), Balanced Random Forest Classifier, and Easy Ensemble AdaBoost Classifier algorithms are shown below.
 
-- RandoM Oversampling
--      Precisision for predicting lower risk is higher (1.0)
+1. RandoM Oversampling
+- Precisision for predicting 
+       lower risk is higher (1.0)
+       higher risk is very poor (0.01)
 
-
-
-
-
-
-- Precisision for predicting higher risk is very poor (0.01)
-       - Recall for predicting lower risk is 0.63
-       - Recall for predicting higher risk is 0.68
-       - F1 score for predicting lower risk is higher (0.81)
-       - F1 score for predicting higher risk is very poor (0.02)
-       - So, it shows that this is not a good model for predicting higher credit risk
+       Recall for predicting lower risk is 0.63
+Recall for predicting higher risk is 0.68
+F1 score for predicting lower risk is higher (0.81)
+F1 score for predicting higher risk is very poor (0.02)
+So, it shows that this is not a good model for predicting higher credit risk
        
 - SMOTE Oversampling
        - Precisision for predicting lower risk is higher (1.0)
