@@ -67,7 +67,7 @@ Use screenshots of your outputs to support your results.
 | High Risk (Actual)     | 79 | 8 |
 | Low Risk (Actual)   | 979      |   16139 |
 
-![EEC](/images/EEC.png)
+![EEC](/images/eec.png)
 
 
 ## Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. 
