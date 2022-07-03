@@ -9,13 +9,17 @@ The report should contain the following:
 Use screenshots of your outputs to support your results.
 
 
-**Randon Oversampling**
+**1. Randon Oversampling**
 
 |               |  High Risk (Pred.)          | Low Risk (Pred.)  |
 | ------------- |:-------------:| -----:|
 | High Risk (Actual)     | 55 | 32 |
 | Low Risk (Actual)   | 5455      |   11663 |      
        
+       
+![ROS](/images/ROS.png)
+
+
        
 **SMOTE Oversampling**   
   
