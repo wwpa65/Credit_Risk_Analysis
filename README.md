@@ -13,17 +13,16 @@ Use screenshots of your outputs to support your results.
 
 |               |  High Risk (Pred.)          | Low Risk (Pred.)  |
 | ------------- |:-------------:| -----:|
-| High Risk (Actual)     | 53 | 34 |
-| Low Risk (Actual)   | 5335      |   11783 |      
+| High Risk (Actual)     | 55 | 32 |
+| Low Risk (Actual)   | 5455      |   11663 |      
        
        
-**SMOTE Oversampling**     
+**SMOTE Oversampling**   
   
- 
 |               |  High Risk (Pred.)          | Low Risk (Pred.)  |
 | ------------- |:-------------:| -----:|
-| High Risk (Actual)     | 51 | 36 |
-| Low Risk (Actual)   | 6605      |   11053 |
+| High Risk (Actual)     | 53 | 34 |
+| Low Risk (Actual)   | 6135      |   10983 |
 
 
 **Under sampling**
@@ -38,8 +37,8 @@ Use screenshots of your outputs to support your results.
 
 |               |  High Risk (Pred.)          | Low Risk (Pred.)  |
 | ------------- |:-------------:| -----:|
-| High Risk (Actual)     | 61 | 26 |
-| Low Risk (Actual)   | 7839      |   9279 |
+| High Risk (Actual)     | 62 | 25 |
+| Low Risk (Actual)   | 8008      |   9110 |
 
 **Balanced Random Forest Classifier**
 
