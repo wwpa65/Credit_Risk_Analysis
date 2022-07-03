@@ -29,6 +29,8 @@ Use screenshots of your outputs to support your results.
 | Low Risk (Actual)   | 6135      |   10983 |
 
 
+![SMOTE](/images/SMOTE.png)
+
 **Under sampling**
 
 |               |  High Risk (Pred.)          | Low Risk (Pred.)  |
@@ -36,13 +38,18 @@ Use screenshots of your outputs to support your results.
 | High Risk (Actual)     | 52 | 35|
 | Low Risk (Actual)   | 9681      |   7437 |
 
+![Under Sampling](/images/UNDER.png)
 
-**SMOTENN (Combination of Over and Undersampling)**
+
+**SMOTEEN (Combination of Over and Undersampling)**
 
 |               |  High Risk (Pred.)          | Low Risk (Pred.)  |
 | ------------- |:-------------:| -----:|
 | High Risk (Actual)     | 62 | 25 |
 | Low Risk (Actual)   | 8008      |   9110 |
+
+![SMOTEEN](/images/SMOTEEN.png)
+
 
 **Balanced Random Forest Classifier**
 
@@ -51,12 +58,16 @@ Use screenshots of your outputs to support your results.
 | High Risk (Actual)     | 58 | 29 |
 | Low Risk (Actual)   | 1560     |   15558 |
 
+![BRF](/images/BRF.png)
+
 **Easy Ensemble AdaBoost Classifier**
 
 |               |  High Risk (Pred.)          | Low Risk (Pred.)  |
 | ------------- |:-------------:| -----:|
 | High Risk (Actual)     | 79 | 8 |
 | Low Risk (Actual)   | 979      |   16139 |
+
+![EEC](/images/EEC.png)
 
 
 ## Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. 
