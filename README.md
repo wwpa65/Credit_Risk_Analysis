@@ -17,86 +17,101 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 
 Analysis results using Randon Oversampling, SMOTE Oversampling, Undersampling, SMOTEEN (Combination of Over and Undersampling), Balanced Random Forest Classifier, and Easy Ensemble AdaBoost Classifier algorithms are shown below.
 
-1. RandoM Oversampling
-- Precisision for predicting 
-       lower risk is higher (1.0)
-       higher risk is very poor (0.01)
+**1. Random Oversampling**
+- Balanced accuracy score is 0.66
+- Precisision for predicting lower risk is higher (1.0)
+- Precisision for predicting higher risk is very poor (0.01)
+- Recall for predicting lower risk is 0.6
+- Recall for predicting higher risk is 0.68
+- F1 score for predicting lower risk is higher (0.81)
+- F1 score for predicting higher risk is very poor (0.02)
 
-       Recall for predicting lower risk is 0.63
-Recall for predicting higher risk is 0.68
-F1 score for predicting lower risk is higher (0.81)
-F1 score for predicting higher risk is very poor (0.02)
 So, it shows that this is not a good model for predicting higher credit risk
        
-- SMOTE Oversampling
-       - Precisision for predicting lower risk is higher (1.0)
-       - Precisision for predicting higher risk is very poor (0.01)
-       - Recall for predicting lower risk is 0.61
-       - Recall for predicting higher risk is 0.64
-       - F1 score for predicting lower risk is higher (0.78)
-       - F1 score for predicting higher risk is very poor (0.02)
-       - So, it shows that this is not a good model for predicting higher credit risk
+**2. SMOTE Oversampling**
+- Balanced accuracy score is 0.63
+- Precisision for predicting lower risk is higher (1.0)
+- Precisision for predicting higher risk is very poor (0.01)
+- Recall for predicting lower risk is 0.61
+- Recall for predicting higher risk is 0.64
+- F1 score for predicting lower risk is 0.78
+- F1 score for predicting higher risk is very poor (0.02)
        
-- Undersampling
-
-       - Precisision for predicting lower risk is higher (1.0)
-       - Precisision for predicting higher risk is very poor (0.01)
-       - Recall for predicting lower risk is 0.43
-       - Recall for predicting higher risk is 0.60
-       - F1 score for predicting lower risk is higher (0.60)
-       - F1 score for predicting higher risk is very poor (0.02)
-       - So, it shows that this is not a good model for predicting higher credit risk
+  So, it shows that this is not a good model for predicting higher credit risk
        
- - SMOTEENN (Combination of Over and Undersampling)
-       - Precisision for predicting lower risk is higher (1.0)
-       - Precisision for predicting higher risk is very poor (0.01)
-       - Recall for predicting lower risk is 0.53
-       - Recall for predicting higher risk is 0.71
-       - F1 score for predicting lower risk is higher (0.69)
-       - F1 score for predicting higher risk is very poor (0.02)
-       - So, it shows that this is not a good model for predicting higher credit risk
+**3. Undersampling**
+- Balanced accuracy score is 0.52
+- Precisision for predicting lower risk is higher (1.0)
+- Precisision for predicting higher risk is very poor (0.01)
+- Recall for predicting lower risk is 0.43
+- Recall for predicting higher risk is 0.60
+- F1 score for predicting lower risk is 0.60
+- F1 score for predicting higher risk is very poor (0.02)
+
+So, it shows that this is not a good model for predicting higher credit risk
        
-- Balanced Random Forest Classifier
-       - Precisision for predicting lower risk is higher (1.0)
-       - Precisision for predicting higher risk is very poor (0.04)
-       - Recall for predicting lower risk is 0.67
-       - Recall for predicting higher risk is 0.91
-       - F1 score for predicting lower risk is higher (0.07)
-       - F1 score for predicting higher risk is very poor (0.95)
-       - So, it shows that this is not a good model for predicting higher credit risk
+**4. SMOTEENN (Combination of Over and Undersampling)**
+- Balanced accuracy score is 0.62
+- Precisision for predicting lower risk is higher (1.0)
+- Precisision for predicting higher risk is very poor (0.01)
+- Recall for predicting lower risk is 0.53
+- Recall for predicting higher risk is 0.71
+- F1 score for predicting lower risk is 0.69
+- F1 score for predicting higher risk is very poor (0.02)
 
-- Easy Ensemble AdaBoost Classifier
-       - Precisision for predicting lower risk is higher (1.0)
-       - Precisision for predicting higher risk is very poor (0.07)
-       - Recall for predicting lower risk is 0.94
-       - Recall for predicting higher risk is 0.91
-       - F1 score for predicting lower risk is higher (0.97)
-       - F1 score for predicting higher risk is very poor (0.14)
-       - So, it shows that this is not a good model for predicting higher credit risk
+So, it shows that this is not a good model for predicting higher credit risk
+       
+**5. Balanced Random Forest Classifier**
+- Balanced accuracy score is 0.79
+- Precisision for predicting lower risk is higher (1.0)
+- Precisision for predicting higher risk is very poor (0.04)
+- Recall for predicting lower risk is 0.67
+- Recall for predicting higher risk is 0.91
+- F1 score for predicting lower risk very poor (0.07)
+- F1 score for predicting higher risk is higher (0.95)
+
+This model seems to have a higher recall and F1 score. However, it does not have a good precision. 
+So, it shows that this might not be a good model for predicting higher credit risk.
+
+**6. Easy Ensemble AdaBoost Classifier**
+-  Balanced accuracy score is 0.93
+-  for predicting lower risk is higher (1.0)
+- Precisision for predicting higher risk is very poor (0.07)
+- Recall for predicting lower risk is 0.94
+- Recall for predicting higher risk is 0.91
+- F1 score for predicting lower risk is higher (0.97)
+- F1 score for predicting higher risk is very poor (0.14)
+
+This model seems to have a higher recall for predicting lower and higher risks. However, it does not have a good precision for F1 score for predicting lower risk. 
+So, it shows that this might not be a good model for predicting higher credit risk.
 
 
-**1. Randon Oversampling**
+**1a. Confusion matrix for model with random oversampling**
 
 |                    |  High Risk (Pred.)| Low Risk (Pred.) |
 | -----------------  |:-----------------:|:----------------:|
 | High Risk (Actual) |        55         |        32        |
 | Low Risk (Actual)  |       5455        |      11663       |      
        
-       
+ 
+**1b. Imbalanced classification report for model with random oversampling*
+
 ![ROS](/images/ROS.png)
 
-
        
-**2. SMOTE Oversampling**
+**2a. Confusion matrix for model with SMOTE Oversampling**
 
 |                    |  High Risk (Pred.)| Low Risk (Pred.) |
 | -----------------  |:-----------------:|:----------------:|
 | High Risk (Actual) |        53         |        34        |
 | Low Risk (Actual)  |       6135        |      10983       |  
 
+
+**2b. Imbalanced classification report for model with SMOTE Oversampling**
+
 ![SMOTE](/images/SMOTE.png)
 
-**3. Undersampling**
+**3a. Confusion matrix for model with Undersampling**
 
 |                    |  High Risk (Pred.)| Low Risk (Pred.) |
 | -----------------  |:-----------------:|:----------------:|
@@ -104,21 +119,24 @@ So, it shows that this is not a good model for predicting higher credit risk
 | Low Risk (Actual)  |       9681        |       7437       |  
 
 
+**3b. Imbalanced classification report for model with Undersampling**
 
 ![Under Sampling](/images/UNDER.png)
 
 
-**4. SMOTEEN (Combination of Over and Undersampling)**
+**4a. Confusion matrix for model with combination of Over and Undersampling (SMOTEEN)**
 
 |                    |  High Risk (Pred.)| Low Risk (Pred.) |
 | -----------------  |:-----------------:|:----------------:|
 | High Risk (Actual) |        62         |        25        |
 | Low Risk (Actual)  |       8008        |       9110       |  
 
+**4b. Imbalanced classification report for model with combination of Over and Undersampling (SMOTEEN)**
+
 ![SMOTEEN](/images/SMOTEEN.png)
 
 
-**5. Balanced Random Forest Classifier**
+**5a. Confusion matrix for model with Balanced Random Forest Classification**
 
 |                    |  High Risk (Pred.)| Low Risk (Pred.) |
 | -----------------  |:-----------------:|:----------------:|
@@ -126,15 +144,18 @@ So, it shows that this is not a good model for predicting higher credit risk
 | Low Risk (Actual)  |       1560        |      15558       |  
 
 
+**5b. Imbalanced classification report for model with Balanced Random Forest Classifiier**
 
 ![BRF](/images/BRF.png)
 
-**6. Easy Ensemble AdaBoost Classifier**
+**6a. Confusion matrix for model with Easy Ensemble AdaBoost Classifier**
 
 |                    |  High Risk (Pred.)| Low Risk (Pred.) |
 | -----------------  |:-----------------:|:----------------:|
 | High Risk (Actual) |        79         |        35        |
 | Low Risk (Actual)  |       979         |      16139       |  
+
+**6b. Imbalanced classification report for model with Easy Ensemble AdaBoost Classifier**
 
 ![EEC](/images/eec.png)
 
