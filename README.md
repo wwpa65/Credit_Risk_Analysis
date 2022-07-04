@@ -160,7 +160,15 @@ So, it shows that this might not be a good model for predicting higher credit ri
 
 **6b. Imbalanced classification report for model with Easy Ensemble AdaBoost Classifier**
 
-![EEC](/images/eec.png)
+![EEC](/images/EEC.png)
+
+
+Features important for prediction of credit risk in Balanced Random Forest Classifier are shown below:
+
+![Features(/images/features.png)
+
+![Feature_List(/images/feature_list.png)
+
  
 
 ## Summary:
