@@ -19,8 +19,8 @@ Analysis results using Randon Oversampling, SMOTE Oversampling, Undersampling, S
 
 **1. Random Oversampling**
 - Balanced accuracy score is 0.66
-- Precisision for predicting lower risk is higher (1.0)
-- Precisision for predicting higher risk is very poor (0.01)
+- Precisision for predicting lower risk is 1.0
+- Precisision for predicting higher risk is 0.01
 - Recall for predicting lower risk is 0.6
 - Recall for predicting higher risk is 0.68
 - F1 score for predicting lower risk is higher (0.81)
@@ -29,24 +29,24 @@ Analysis results using Randon Oversampling, SMOTE Oversampling, Undersampling, S
 So, it shows that this is not a good model for predicting higher credit risk
        
 **2. SMOTE Oversampling**
-- Balanced accuracy score is 0.63
-- Precisision for predicting lower risk is higher (1.0)
-- Precisision for predicting higher risk is very poor (0.01)
+- Balanced accuracy score is 0.63 
+- Precisision for predicting lower risk is 1.0
+- Precisision for predicting higher risk is 0.01
 - Recall for predicting lower risk is 0.61
 - Recall for predicting higher risk is 0.64
 - F1 score for predicting lower risk is 0.78
 - F1 score for predicting higher risk is very poor (0.02)
        
-  So, it shows that this is not a good model for predicting higher credit risk
+So, it shows that this is not a good model for predicting higher credit risk
        
 **3. Undersampling**
 - Balanced accuracy score is 0.52
-- Precisision for predicting lower risk is higher (1.0)
-- Precisision for predicting higher risk is very poor (0.01)
+- Precisision for predicting lower risk is 1.0
+- Precisision for predicting higher risk is 0.01
 - Recall for predicting lower risk is 0.43
 - Recall for predicting higher risk is 0.60
 - F1 score for predicting lower risk is 0.60
-- F1 score for predicting higher risk is very poor (0.02)
+- F1 score for predicting higher risk is 0.02
 
 So, it shows that this is not a good model for predicting higher credit risk
        
@@ -83,6 +83,7 @@ So, it shows that this might not be a good model for predicting higher credit ri
 - F1 score for predicting higher risk is very poor (0.14)
 
 This model seems to have a higher recall for predicting lower and higher risks. However, it does not have a good precision for F1 score for predicting lower risk. 
+
 So, it shows that this might not be a good model for predicting higher credit risk.
 
 
@@ -160,11 +161,7 @@ So, it shows that this might not be a good model for predicting higher credit ri
 ![EEC](/images/eec.png)
 
 
-## Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. 
+## Summary:
+IN SUMMARY, the model with the undersampling algorithm had the highest false positives (FP) and the lowest number of true negatives (TN, low risk). The Balanced Random Forest Classifier and the Easy Ensemble AdaBoost Classifier performed better when compared to other models.  The best model out of all 6 models is the model with Easy Ensemble AdaBoost Classifier. It had the highest number of TP (Higher risk), TN (Lower Risk), and a lower number of FP and FN (false negatives) compared with other models. However, this model was also not performing well for predicting credit card risk (higher or lower) because it also had a larger number of FP and FN.
 
-Results:
-There is a bulleted list that describes the balanced accuracy score and the precision and recall scores of all six machine learning models (15 pt)
-
-Summary:
-There is a summary of the results (2 pt)
-There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt)
+None of these 6 models cannot be recomended to predict credit risk accurately because of the reasons outlined above. This further demonstrates the issu with imbalanced credit targets (lower or higher risk), because good loans outnumber bad loans.  
