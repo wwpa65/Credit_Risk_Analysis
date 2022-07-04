@@ -13,9 +13,9 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 - Imbalanced-learn
 - Git
 
-## Results: Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. 
+## Results:
 
-Analysis results using Randon Oversampling, SMOTE Oversampling, Undersampling, SMOTEEN (Combination of Over and Undersampling), Balanced Random Forest Classifier, and Easy Ensemble AdaBoost Classifier algorithms are shown below.
+Analysis results using Randon Oversampling, SMOTE Oversampling, Undersampling, SMOTEEN (Combination of Over and Undersampling), Balanced Random Forest Classifier, and Easy Ensemble AdaBoost Classifier algorithms are shown below. The confusion matrix and the balanced classification report is also included below. 
 
 **1. Random Oversampling**
 - Balanced accuracy score is 0.66
