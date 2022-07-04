@@ -162,8 +162,7 @@ So, it shows that this might not be a good model for predicting higher credit ri
 
 ![EEC](/images/EEC.png)
 
-
-Features important for prediction of credit risk in Balanced Random Forest Classifier are shown below:
+Features important for prediction of credit risk in Balanced Random Forest Classifier are shown below.
 
 ![Features(/images/features.png)
 
