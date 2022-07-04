@@ -6,7 +6,7 @@ Thw aim of this project was to apply machine learning methods to solve a real-wo
 
 Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, we oversampled the data using the RandomOverSampler and SMOTE algorithms, and undersampled the data using the ClusterCentroids algorithm. Then, a combinatorial approach of over- and undersampling was employed using the SMOTEENN algorithm. Next, two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, were used to predict credit risk. Finally, the performance of these models were evaluated to make recommendation on whether these models  should be used to predict credit risk.
 
-**Tools**
+### Tools
 - Methods: RandomOverSampler and SMOTE algorithms for over sampling, ClusterCentroids algorithm for undersampling, and SMOTEEN algorithm for combinatorial over and undersampling
 - Python, Pandas
 - Scikit Learn
