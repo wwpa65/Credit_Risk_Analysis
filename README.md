@@ -27,6 +27,19 @@ Analysis results using Randon Oversampling, SMOTE Oversampling, Undersampling, S
 - F1 score for predicting higher risk is very poor (0.02)
 
 So, it shows that this is not a good model for predicting higher credit risk
+
+**1a. Confusion matrix for model with random oversampling**
+
+|                    |  High Risk (Pred.)| Low Risk (Pred.) |
+| -----------------  |:-----------------:|:----------------:|
+| High Risk (Actual) |        55         |        32        |
+| Low Risk (Actual)  |       5455        |      11663       |      
+       
+ 
+**1b. Imbalanced classification report for model with random oversampling**
+
+![ROS](/images/ROS.png)
+
        
 **2. SMOTE Oversampling**
 - Balanced accuracy score is 0.63 
@@ -38,6 +51,19 @@ So, it shows that this is not a good model for predicting higher credit risk
 - F1 score for predicting higher risk is very poor (0.02)
        
 So, it shows that this is not a good model for predicting higher credit risk
+
+**2a. Confusion matrix for model with SMOTE Oversampling**
+
+|                    |  High Risk (Pred.)| Low Risk (Pred.) |
+| -----------------  |:-----------------:|:----------------:|
+| High Risk (Actual) |        53         |        34        |
+| Low Risk (Actual)  |       6135        |      10983       |  
+
+
+**2b. Imbalanced classification report for model with SMOTE Oversampling**
+
+![SMOTE](/images/SMOTE.png)
+
        
 **3. Undersampling**
 - Balanced accuracy score is 0.52
@@ -49,6 +75,19 @@ So, it shows that this is not a good model for predicting higher credit risk
 - F1 score for predicting higher risk is 0.02
 
 So, it shows that this is not a good model for predicting higher credit risk
+
+**3a. Confusion matrix for model with Undersampling**
+
+|                    |  High Risk (Pred.)| Low Risk (Pred.) |
+| -----------------  |:-----------------:|:----------------:|
+| High Risk (Actual) |        52         |        35        |
+| Low Risk (Actual)  |       9681        |       7437       |  
+
+
+**3b. Imbalanced classification report for model with Undersampling**
+
+![Under Sampling](/images/UNDER.png)
+
        
 **4. SMOTEENN (Combination of Over and Undersampling)**
 - Balanced accuracy score is 0.62
@@ -60,6 +99,18 @@ So, it shows that this is not a good model for predicting higher credit risk
 - F1 score for predicting higher risk is very poor (0.02)
 
 So, it shows that this is not a good model for predicting higher credit risk
+
+**4a. Confusion matrix for model with combination of Over and Undersampling (SMOTEEN)**
+
+|                    |  High Risk (Pred.)| Low Risk (Pred.) |
+| -----------------  |:-----------------:|:----------------:|
+| High Risk (Actual) |        62         |        25        |
+| Low Risk (Actual)  |       8008        |       9110       |  
+
+**4b. Imbalanced classification report for model with combination of Over and Undersampling (SMOTEEN)**
+
+![SMOTEEN](/images/SMOTEEN.png)
+
        
 **5. Balanced Random Forest Classifier**
 - Balanced accuracy score is 0.79
@@ -72,6 +123,19 @@ So, it shows that this is not a good model for predicting higher credit risk
 
 This model seems to have a higher recall and F1 score. However, it does not have a good precision. 
 So, it shows that this might not be a good model for predicting higher credit risk.
+
+**5a. Confusion matrix for model with Balanced Random Forest Classification**
+
+|                    |  High Risk (Pred.)| Low Risk (Pred.) |
+| -----------------  |:-----------------:|:----------------:|
+| High Risk (Actual) |        58         |        29        |
+| Low Risk (Actual)  |       1560        |      15558       |  
+
+
+**5b. Imbalanced classification report for model with Balanced Random Forest Classifiier**
+
+![BRF](/images/BRF.png)
+
 
 **6. Easy Ensemble AdaBoost Classifier**
 -  Balanced accuracy score is 0.93
@@ -87,68 +151,6 @@ This model seems to have a higher recall for predicting lower and higher risks. 
 So, it shows that this might not be a good model for predicting higher credit risk.
 
 
-**1a. Confusion matrix for model with random oversampling**
-
-|                    |  High Risk (Pred.)| Low Risk (Pred.) |
-| -----------------  |:-----------------:|:----------------:|
-| High Risk (Actual) |        55         |        32        |
-| Low Risk (Actual)  |       5455        |      11663       |      
-       
- 
-**1b. Imbalanced classification report for model with random oversampling*
-
-![ROS](/images/ROS.png)
-
-       
-**2a. Confusion matrix for model with SMOTE Oversampling**
-
-|                    |  High Risk (Pred.)| Low Risk (Pred.) |
-| -----------------  |:-----------------:|:----------------:|
-| High Risk (Actual) |        53         |        34        |
-| Low Risk (Actual)  |       6135        |      10983       |  
-
-
-**2b. Imbalanced classification report for model with SMOTE Oversampling**
-
-![SMOTE](/images/SMOTE.png)
-
-**3a. Confusion matrix for model with Undersampling**
-
-|                    |  High Risk (Pred.)| Low Risk (Pred.) |
-| -----------------  |:-----------------:|:----------------:|
-| High Risk (Actual) |        52         |        35        |
-| Low Risk (Actual)  |       9681        |       7437       |  
-
-
-**3b. Imbalanced classification report for model with Undersampling**
-
-![Under Sampling](/images/UNDER.png)
-
-
-**4a. Confusion matrix for model with combination of Over and Undersampling (SMOTEEN)**
-
-|                    |  High Risk (Pred.)| Low Risk (Pred.) |
-| -----------------  |:-----------------:|:----------------:|
-| High Risk (Actual) |        62         |        25        |
-| Low Risk (Actual)  |       8008        |       9110       |  
-
-**4b. Imbalanced classification report for model with combination of Over and Undersampling (SMOTEEN)**
-
-![SMOTEEN](/images/SMOTEEN.png)
-
-
-**5a. Confusion matrix for model with Balanced Random Forest Classification**
-
-|                    |  High Risk (Pred.)| Low Risk (Pred.) |
-| -----------------  |:-----------------:|:----------------:|
-| High Risk (Actual) |        58         |        29        |
-| Low Risk (Actual)  |       1560        |      15558       |  
-
-
-**5b. Imbalanced classification report for model with Balanced Random Forest Classifiier**
-
-![BRF](/images/BRF.png)
-
 **6a. Confusion matrix for model with Easy Ensemble AdaBoost Classifier**
 
 |                    |  High Risk (Pred.)| Low Risk (Pred.) |
@@ -159,7 +161,7 @@ So, it shows that this might not be a good model for predicting higher credit ri
 **6b. Imbalanced classification report for model with Easy Ensemble AdaBoost Classifier**
 
 ![EEC](/images/eec.png)
-
+ 
 
 ## Summary:
 IN SUMMARY, the model with the undersampling algorithm had the highest false positives (FP) and the lowest number of true negatives (TN, low risk). The Balanced Random Forest Classifier and the Easy Ensemble AdaBoost Classifier performed better when compared to other models.  The best model out of all 6 models is the model with Easy Ensemble AdaBoost Classifier. It had the highest number of TP (Higher risk), TN (Lower Risk), and a lower number of FP and FN (false negatives) compared with other models. However, this model was also not performing well for predicting credit card risk (higher or lower) because it also had a larger number of FP and FN.
